@@ -12,6 +12,7 @@ const backButton = document.querySelector('.back-button');
 
 // Function to show the form and hode the initial content
 function showForm() {
+  console.log("CTA button has been clicked.");
   heroSection.computedStyleMap.display = 'none';
   ctaSection.computedStyleMap.display = 'none';
   contactFormSection.computedStyleMap.display = 'block'
