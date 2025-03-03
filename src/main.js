@@ -1,3 +1,5 @@
+console.log("main.js is loaded!!")
+
 import './style.css'
 
 // Get references to the necessary elements
