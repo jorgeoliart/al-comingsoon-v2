@@ -19,6 +19,7 @@
   --font-family-heading: Bahnschrift, 'Segoe UI', sans-serif;
 
   /* Spacing */
+  --space-xxs: 0.2rem;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -143,7 +144,7 @@ header {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  padding: var(--space-xs);
+  padding: var(--space-xxs);
   cursor: pointer;
   display: flex;
   justify-content: center;
