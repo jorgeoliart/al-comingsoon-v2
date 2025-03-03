@@ -22,7 +22,7 @@ function showForm() {
 function showInitialContent() {
   heroSection.style.display = 'flex';
   ctaSection.style.display = 'flex';
-  contactFormSection.style.displaty = 'none';
+  contactFormSection.style.display = 'none';
 }
 
 // Add event listener to the cta button
