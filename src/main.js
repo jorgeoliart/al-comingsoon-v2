@@ -1,24 +1,41 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Shite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Shite logo to learn more
-    </p>
-  </div>
-`
+// Get references to the necessary elements
+const heroSection = document.querySelector('.hero')
+const ctaSection = document.querySelector('.cta');
+const ctaButton = document.querySelector('.power-button');
+const contactFormSection = document.querySelector('.contact-form');
+const contactForm = document.getElementById('contactForm')
+const backButton = document.querySelector('.back-button');
 
-setupCounter(document.querySelector('#counter'))
+// Function to show the form and hode the initial content
+function showForm() {
+  heroSection.computedStyleMap.display = 'none';
+  ctaSection.computedStyleMap.display = 'none';
+  contactFormSection.computedStyleMap.display = 'block'
+}
+
+// Function to hide the form and show the initial content
+function showInitialContent() {
+  heroSection.computedStyleMap.display = 'flex';
+  ctaSection.computedStyleMap.display = 'flex';
+  contactFormSection.computedStyleMap.displaty = 'none';
+}
+
+// Add event listener to the cta button
+ctaButton.addEventListener('click', showForm);
+
+// Add event listener to the back button
+backButton.addEventListener('click', showInitialContent);
+
+// Add event lister for form submission (prevent default and handle submission)
+contactForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // To be completed
+
+  alert('Form submission handled! (Here we will send data to a server');
+
+  // After successful submission (or simulation), go back to the initial content
+  showInitialContent();
+});
