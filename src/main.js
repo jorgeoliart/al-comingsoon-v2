@@ -13,16 +13,16 @@ const backButton = document.querySelector('.back-button');
 // Function to show the form and hode the initial content
 function showForm() {
   console.log("CTA button has been clicked.");
-  heroSection.computedStyleMap.display = 'none';
-  ctaSection.computedStyleMap.display = 'none';
-  contactFormSection.computedStyleMap.display = 'block'
+  heroSection.style.display = 'none';
+  ctaSection.style.display = 'none';
+  contactFormSection.style.display = 'block'
 }
 
 // Function to hide the form and show the initial content
 function showInitialContent() {
-  heroSection.computedStyleMap.display = 'flex';
-  ctaSection.computedStyleMap.display = 'flex';
-  contactFormSection.computedStyleMap.displaty = 'none';
+  heroSection.style.display = 'flex';
+  ctaSection.style.display = 'flex';
+  contactFormSection.style.displaty = 'none';
 }
 
 // Add event listener to the cta button
