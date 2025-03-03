@@ -75,11 +75,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   max-width: 75%;
   line-height: 1.3;
   text-align: center;
@@ -93,7 +93,7 @@ header {
   color: var(--color-yellow);
   font-size: 1.65rem;
   font-family: var(--font-family-heading);
-  margin-top: var(--space-xl);
+  margin-top: var(--space-lg);
 }
 
 .logotype {
@@ -113,6 +113,7 @@ header {
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 1.3rem;
+  margin-top: 1rem;
 }
 
 .rocket {
