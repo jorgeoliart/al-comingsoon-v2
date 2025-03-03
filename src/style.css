@@ -1,5 +1,4 @@
 :root {
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -113,9 +112,10 @@ header {
 }
 
 .rocket {
-  width: 180px;
+  width: 150px;
   height: auto;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
+  max-width: 100%;
 }
 
 .cta-button {
@@ -141,7 +141,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease; /* Study this */
+  transition: background-color 0.3s ease; 
 }
 
 .power-button:hover {
@@ -160,6 +160,7 @@ header {
   margin-bottom: 0;
   padding: var(--space-sm);
   background-color: var(--color-yellow);
+  font-size: 0.9rem;
 }
 
 /* --- Media queries --- */
