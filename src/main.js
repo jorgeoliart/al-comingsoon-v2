@@ -25,7 +25,7 @@ function showInitialContent() {
   contactFormSection.style.display = 'none';
 }
 
-// Add event listener to the cta button
+// Add event listener to the cta button (to show form)
 ctaButton.addEventListener('click', showForm);
 
 // Add event listener to the back button
@@ -33,12 +33,8 @@ backButton.addEventListener('click', showInitialContent);
 
 // Add event lister for form submission (prevent default and handle submission)
 contactForm.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  // To be completed
-
-  alert('Form submission handled! (Here we will send data to a server');
-
-  // After successful submission (or simulation), go back to the initial content
+  // Basic Success Feedback (replace alert with a nicer UI later)
+  alert('Thank you! Your inquiry has been submitted.'); // ** ADDED basic success feedback **
+  
   showInitialContent();
 });
