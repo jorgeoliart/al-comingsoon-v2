@@ -60,6 +60,11 @@ header {
   border-radius: 50%;
 }
 
+/* --- Commonly used classes --- */
+.hidden {
+  display: none;
+}
+
 /* --- Main container -- */
 .main-content {
   margin: auto;

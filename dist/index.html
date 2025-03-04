@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Astral Lingua - ready to launch</title>
-      <script type="module" crossorigin src="/assets/index-Ckf85vTD.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-BVSKtu8g.css">
+      <script type="module" crossorigin src="/assets/index-poWyUf2R.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-DmSvlokV.css">
     </head>
     <body>
         <!-- content of the page -->
@@ -37,7 +37,19 @@
             <section class="contact-form" style="display:none;">
               <h2>Join our waitlist</h2>
               <p>Interested in learning English or Spanish with personalised teaching? Tell us a about it and we'll keep you in the loop.</p>
-              <form id="contactForm" netlify>
+              
+              <!-- *** THE FORM *** -->
+              <form
+                id="contactForm"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                >
+                <p class="hidden">
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field">
+                  </label>
+                </p>
                 <div class="form-group">
                   <label for="name">Name:</label>
                   <input type="text" id="name" name="name" placeholder="Share your name here" required>
