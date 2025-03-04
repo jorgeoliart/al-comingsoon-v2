@@ -222,6 +222,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: var(--space-sm);
 }
 
 .submit-button, .back-button {
@@ -235,6 +236,7 @@ header {
   transition: background-color 0.3s ease;
   display: inline block;
   margin-right: var(--space-xs);
+  flex: 1;
 }
 
 .submit-button:hover, .back-button:hover {
