@@ -299,8 +299,8 @@ header {
 
   .contact-form {
     width: 90%;
-    max-width: 600px;
-    padding: var(--space-md);
+    max-width: 660px;
+    padding: var(--space-lg);
   }
 
   .contact-form h2 {
