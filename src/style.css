@@ -300,7 +300,7 @@ header {
   .contact-form {
     width: 90%;
     max-width: 660px;
-    padding: var(--space-lg);
+    padding: var(--space-xl) var(--space-lg);
   }
 
   .contact-form h2 {
@@ -317,6 +317,11 @@ header {
     cursor: pointer;
     margin-top: var(--space-sm); /* check */
     margin-right: var(--space-xs);
+    font-size: 1.2rem;
+  }
+
+  .form-group label {
+    margin-bottom: var(--space-sm);
     font-size: 1.2rem;
   }
 }
