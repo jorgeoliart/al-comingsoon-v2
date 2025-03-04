@@ -392,4 +392,27 @@ header {
       font-size: 1.1rem;
   }
 
+  /* FORMS IN PC */
+  .contact-form {
+    max-width: 90%;
+    padding: var(--space-xl);
+  }
+  .contact-form h2 {
+    font-size: 2.75rem;
+  }
+  .contact-form p {
+    font-size: 1.8rem;
+
+  }
+  .form-group label {
+    font-size: 1.3rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 1.3rem;
+  }
+  .submit-button, .back-button {
+    font-size: 1.3rem;
+  }
+
 }
