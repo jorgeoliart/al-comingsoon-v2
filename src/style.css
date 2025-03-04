@@ -248,9 +248,13 @@ header {
 /* --- Media queries --- */
 
 @media (max-width: 768px) {
+  header {
+    margin: var(--space-md);
+  }
+  
   .logo {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
   }
 
   .hero {
