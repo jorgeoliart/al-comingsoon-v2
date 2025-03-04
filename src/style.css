@@ -311,6 +311,14 @@ header {
   .contact-form p {
     font-size: 1.3rem;
   }
+
+  .submit-button, .back-button {
+    padding: var(--space-sm) var(--space-sm); /* check */
+    cursor: pointer;
+    margin-top: var(--space-sm); /* check */
+    margin-right: var(--space-xs);
+    font-size: 1.2rem;
+  }
 }
 
 
