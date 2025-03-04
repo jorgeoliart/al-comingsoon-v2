@@ -175,7 +175,7 @@ header {
 .contact-form {
   width: 90%;
   max-width: 400px;
-  margin: var(--space-lg) auto;
+  margin: var(--space-md) auto;
   padding: var(--space-md);
   background-color: var(--color-dark-purple);
   border-radius: 8px;
@@ -186,6 +186,8 @@ header {
   color: var(--color-yellow);
   margin-bottom: var(--space-md);
   text-align: center;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
 }
 
 .contact-form p {
