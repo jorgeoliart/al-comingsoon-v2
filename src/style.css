@@ -135,7 +135,8 @@ header {
 .cta p {
   color: var(--color-text-light);
   margin-bottom: var(--space-xs);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: var(--font-family-heading);
 }
 
 .power-button {
@@ -282,7 +283,7 @@ header {
   }
 
   .cta p {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .rocket {
@@ -297,24 +298,26 @@ header {
 
 
 /*
-@media (max-width: 480px) {
+@media (min-width: 1024px) {
   h1 {
       font-size: 3.5rem;
   }
   .subtitle {
-      font-size: 1.2rem;
-      max-width: 80%
+      font-size: 1.7rem;
+      max-width: 66%
   }
   .launch-text {
-      font-size: 1.65rem;
+      font-size: 2.5rem;
       margin-top: var(--space-xl);
   }
   .logo {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
   }
   .rocket {
-      flex: 2;
+        flex: 2;
+        width: 160px;
+
   }
   .cta-button {
       display: flex;
@@ -323,6 +326,7 @@ header {
       flex: 1;
       gap: 0.75rem;
   }
+
   .logotype {
       display: flex;
       align-items: center;
@@ -335,7 +339,7 @@ header {
       width:85%;
   }
   .cta p {
-      font-size: 1.05rem;
+      font-size: 1.3rem;
   }
   .site-footer {
       font-size: 0.9rem;
