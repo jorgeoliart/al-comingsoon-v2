@@ -310,6 +310,7 @@ header {
 
   .contact-form p {
     font-size: 1.3rem;
+    width: 90%;
   }
 
   .submit-button, .back-button {
@@ -337,7 +338,6 @@ header {
     font-size: 1rem;
   }
 }
-
 
 /*
 @media (min-width: 1024px) {
