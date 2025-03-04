@@ -218,8 +218,8 @@ header {
   resize: vertical;
 }
 
-#contact-form .buttons {
-  display:flex;
+.buttons {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
