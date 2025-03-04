@@ -324,6 +324,10 @@ header {
     margin-bottom: var(--space-sm);
     font-size: 1.2rem;
   }
+
+  .form-group {
+    margin-top: var(--space-md);
+  }
 }
 
 
