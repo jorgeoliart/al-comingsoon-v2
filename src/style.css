@@ -294,6 +294,19 @@ header {
       width: 80px;
       height: 80px;
   }
+
+  /* Contact form in tablet portrait */
+
+  .contact-form {
+    width: 90%;
+    max-width: 600px;
+    padding: var(--space-md);
+  }
+
+  .contact-form h2 {
+    margin-bottom: var(--space-md);
+    font-size: 2rem;
+  }
 }
 
 
