@@ -246,11 +246,15 @@ header {
 }
 
 /* --- Media queries --- */
-/*
+
 @media (max-width: 768px) {
   .logo {
-      width: 40px;
-      height: 40px;
+      width: 80px;
+      height: 80px;
+  }
+
+  .hero {
+    margin-top: var(--space-xl);
   }
   
   h1 {
@@ -258,12 +262,22 @@ header {
   }
 
   .subtitle {
-      font-size: 1rem;
-      max-width: 90%;
+      font-size: 1.5rem;
+      line-height: 1.5;
   }
 
   .launch-text {
-      font-size: 1rem;
+      font-size: 2.2rem;
+      margin-top: var(--space-xl);
+  }
+
+  .cta {
+    margin-bottom: var(--space-md);
+    gap: 2.5rem;
+  }
+
+  .cta p {
+    font-size: 1.4rem;
   }
 
   .rocket {
@@ -275,7 +289,7 @@ header {
       height: 50px;
   }
 }
-*/
+
 
 /*
 @media (max-width: 480px) {
