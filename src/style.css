@@ -248,7 +248,7 @@ header {
 
 /* --- Media queries --- */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   header {
     margin: var(--space-md);
   }
