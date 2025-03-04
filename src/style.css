@@ -354,6 +354,7 @@ header {
   
   header {
     margin: var(--space-lg);
+    padding-right: var(--space-lg);
   }
   .logo {
       width: 80px;
