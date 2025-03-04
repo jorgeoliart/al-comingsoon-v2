@@ -247,7 +247,7 @@ header {
 }
 
 /* --- Media queries --- */
-
+/* -- TABLET IN PORTRATIT */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
     margin: var(--space-md);
@@ -327,6 +327,14 @@ header {
 
   .form-group {
     margin-top: var(--space-lg);
+  }
+
+  .form-group input {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 }
 
