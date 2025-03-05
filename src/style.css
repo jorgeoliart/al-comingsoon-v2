@@ -185,7 +185,7 @@ header {
   padding: var(--space-md);
   background-color: var(--color-dark-purple);
   border-radius: 8px;
-  text-align:left;
+  text-align: left;
 }
 
 .contact-form h2 {
@@ -253,9 +253,20 @@ header {
 
 /* Form success message */
 
-.form-success-message {
-  text-align: center;
-  /* ... add colors, fonts, padding, etc. ...*/
+.success-message-container {
+  background-color: var(--color-dark-purple);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center; 
+}
+
+.success-message-container h3 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.5rem;
+}
+
+.success-message-container p {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
 }
 
 /* --- Media queries --- */
