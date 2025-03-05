@@ -56,6 +56,6 @@ contactForm.addEventListener('submit', function(event) {
   // Basic Success Feedback (replace alert with a nicer UI later)
   console.log('Form submitted!');
 
-  setTimeout(showSuccessMessage, 500);
+  setTimeout(showSuccessMessage, 2000);
 
 });
