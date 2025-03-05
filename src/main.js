@@ -32,12 +32,23 @@ function showInitialContent() {
   ctaSection.classList.remove('hidden');
   contactFormSection.classList.add('hidden');
   successMessage.classList.add('hidden');
+  resetForm();
 }
 
-// ---- FUNCTION to show success message and hide form
+// --- FUNCTION to show success message and hide form
 function showSuccessMessage() {
   contactFormSection.classList.add('hidden');
   successMessage.classList.remove('hidden');
+
+  setTimeout(function() {
+    resetForm();
+  }, 2000);
+}
+
+// --- FUNCTION to reset the contact form fields
+function resetForm() {
+  contactForm.reset();
+  console.log('Contact form fields have been reset');
 }
 
 // *** EVENT LISTENERS
@@ -56,6 +67,6 @@ contactForm.addEventListener('submit', function(event) {
   // Basic Success Feedback (replace alert with a nicer UI later)
   console.log('Form submitted!');
 
-  setTimeout(showSuccessMessage, 2000);
+  setTimeout(showSuccessMessage, 1500);
 
 });
