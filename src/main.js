@@ -9,7 +9,7 @@ const ctaButton = document.querySelector('.power-button');
 const contactFormSection = document.querySelector('.contact-form');
 const contactForm = document.getElementById('contactForm')
 const formBackButton = document.querySelector('.contact-form .back-button');
-const successMessage = document.querySelector('.form-success-message');
+const successMessage = document.querySelector('.success-message-container');
 const successBackButton = document.querySelector('.success-back-button');
 
 // --- FUNCTION to show the form and hide the initial content
