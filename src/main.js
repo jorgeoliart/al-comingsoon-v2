@@ -29,7 +29,7 @@ function showForm() {
 // --- FUNCTION to hide the form and show the initial content
 function showInitialContent() {
   heroSection.classList.remove('hidden');
-  ctaSection.style.remove('hidden');
+  ctaSection.classList.remove('hidden');
   contactFormSection.classList.add('hidden');
   successMessage.classList.add('hidden');
 }
