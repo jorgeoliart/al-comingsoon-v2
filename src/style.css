@@ -257,6 +257,9 @@ header {
   background-color: var(--color-dark-purple);
   padding: var(--space-lg) var(--space-md);
   text-align: center; 
+  margin-top: var(--space-xl);
+  width: 90%;
+  max-width: 400px;
 }
 
 .success-message-container h3 {
@@ -265,8 +268,13 @@ header {
 }
 
 .success-message-container p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-bottom: var(--space-md);
+}
+
+.success-message-container .success-back-button {
+  font-size: 1.2rem;
+
 }
 
 /* --- Media queries --- */
