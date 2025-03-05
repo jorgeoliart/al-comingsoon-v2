@@ -8,33 +8,54 @@ const ctaSection = document.querySelector('.cta');
 const ctaButton = document.querySelector('.power-button');
 const contactFormSection = document.querySelector('.contact-form');
 const contactForm = document.getElementById('contactForm')
-const backButton = document.querySelector('.back-button');
+const formBackButton = document.querySelector('.contact-form .back-button');
+const successMessage = document.querySelector('.form-success-message');
+const successBackButton = document.querySelector('.success-back-button');
 
-// Function to show the form and hode the initial content
+// --- FUNCTION to show the form and hide the initial content
 function showForm() {
   console.log("CTA button has been clicked.");
-  heroSection.style.display = 'none';
-  ctaSection.style.display = 'none';
-  contactFormSection.style.display = 'block'
+  heroSection.classList.add('hidden'); // classList just added. Check its functioning
+  ctaSection.classList.add('hidden');
+  contactFormSection.classList.remove('hidden');
+
+  // Focus on the first input field when the form is shown
+  const firstInput = contactFormSection.querySelector('input[type="text"], input[type="email"], textarea');
+  if (firstInput) {
+    firstInput.focus();
+  }
 }
 
-// Function to hide the form and show the initial content
+// --- FUNCTION to hide the form and show the initial content
 function showInitialContent() {
-  heroSection.style.display = 'flex';
-  ctaSection.style.display = 'flex';
-  contactFormSection.style.display = 'none';
+  heroSection.classList.remove('hidden');
+  ctaSection.style.remove('hidden');
+  contactFormSection.classList.add('hidden');
+  successMessage.classList.add('hidden');
 }
 
-// Add event listener to the cta button (to show form)
+// ---- FUNCTION to show success message and hide form
+function showSuccessMessage() {
+  contactFormSection.classList.add('hidden');
+  successMessage.classList.remove('hidden');
+}
+
+// *** EVENT LISTENERS
+
+// ** Show form
 ctaButton.addEventListener('click', showForm);
 
-// Add event listener to the back button
-backButton.addEventListener('click', showInitialContent);
+// ** Back button > close form
+formBackButton.addEventListener('click', showInitialContent);
 
-// Add event lister for form submission (prevent default and handle submission)
+// ** Success message back button > close message
+successBackButton.addEventListener('click', showInitialContent);
+
+// ** Form SUBMISSION handling
 contactForm.addEventListener('submit', function(event) {
   // Basic Success Feedback (replace alert with a nicer UI later)
-  alert('Thank you! Your inquiry has been submitted.'); // ** ADDED basic success feedback **
-  
-  showInitialContent();
+  console.log('Form submitted!');
+
+  setTimeout(showSuccessMessage, 500);
+
 });
