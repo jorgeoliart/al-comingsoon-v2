@@ -28,6 +28,12 @@ function showForm() {
 
 // --- FUNCTION to hide the form and show the initial content
 function showInitialContent() {
+  console.log("showInitialContent() is running"); // ADD THIS
+  console.log("heroSection:", heroSection);       // ADD THIS
+  console.log("ctaSection:", ctaSection);         // ADD THIS
+  console.log("contactFormSection:", contactFormSection); // ADD THIS
+  console.log("successMessage:", successMessage);    // ADD THIS
+
   heroSection.classList.remove('hidden');
   ctaSection.classList.remove('hidden');
   contactFormSection.classList.add('hidden');
