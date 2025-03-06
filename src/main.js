@@ -44,12 +44,12 @@ function showInitialContent() {
 // --- FUNCTION to show success message and hide form
 function showSuccessMessage() {
   console.log('showSuccessMessage() function is running!')
-  contactFormSection.classList.add('hidden');
-  successMessage.classList.remove('hidden');
+  // contactFormSection.classList.add('hidden');
+  // successMessage.classList.remove('hidden');
 
-  setTimeout(function() {
-    resetForm();
-  }, 2000);
+  // setTimeout(function() {
+  //   resetForm();
+  // }, 2000);
 }
 
 // --- FUNCTION to reset the contact form fields
