@@ -72,8 +72,10 @@ successBackButton.addEventListener('click', showInitialContent);
 // ** Form SUBMISSION handling
 contactForm.addEventListener('submit', function(event) {
   // Basic Success Feedback (replace alert with a nicer UI later)
-  console.log('Form submitted!');
+  setTimeout(function() {
+    console.log("Timeout function is running! (Anonymous)");
+  }, 1500);
 
-  setTimeout(showSuccessMessage, 1500);
+  console.log('Form submitted! (Logged AFTER setTimeout');
 
 });
