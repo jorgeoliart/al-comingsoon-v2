@@ -43,6 +43,7 @@ function showInitialContent() {
 
 // --- FUNCTION to show success message and hide form
 function showSuccessMessage() {
+  console.log('showSuccessMessage() function is running!')
   contactFormSection.classList.add('hidden');
   successMessage.classList.remove('hidden');
 
