@@ -46,7 +46,7 @@ function showSuccessMessage() {
   console.log('showSuccessMessage() function is running!')
 
   contactFormSection.classList.add('hidden');
-  console.log("contactFormContainer classList after add('hidden'):", contactFormContainer.classList); // **NEW LOG**
+  console.log("contactFormSection classList after add('hidden'):", contactFormSection.classList); // **NEW LOG**
   
   successMessage.classList.remove('hidden');
   console.log("successMessage classList after remove('hidden'):", successMessage.classList); // **NEW LOG**
