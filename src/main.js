@@ -77,10 +77,6 @@ successBackButton.addEventListener('click', showInitialContent);
 
 // ** Form SUBMISSION handling
 contactForm.addEventListener('submit', function(event) {
-  event.preventDefault();
-  // Basic Success Feedback (replace alert with a nicer UI later)
-  console.log('Form submission prevented. Now handling manually');
 
-  showSuccessMessage();
-
+  console.log('Form submission is being handled by Netlify Forms.');
 });
