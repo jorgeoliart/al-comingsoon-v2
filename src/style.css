@@ -264,7 +264,7 @@ button {
   display: inline block;
   margin-right: var(--space-xs);
   flex: 1;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .submit-button:hover, .back-button:hover {
