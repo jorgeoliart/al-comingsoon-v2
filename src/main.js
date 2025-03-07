@@ -10,7 +10,6 @@ const contactFormSection = document.querySelector('.contact-form');
 const contactForm = document.getElementById('contactForm')
 const formBackButton = document.querySelector('.contact-form .back-button');
 const successMessage = document.querySelector('.success-message-container');
-const successBackButton = document.querySelector('.success-back-button');
 
 // --- FUNCTION to show the form and hide the initial content
 function showForm() {
@@ -37,7 +36,6 @@ function showInitialContent() {
 
   heroSection.classList.remove('hidden');
   ctaSection.classList.remove('hidden');
-  contactFormSection.classList.remove('show'); /* Remove 'show' class to fade out */
   contactFormSection.classList.add('hidden'); /* Re-hide it after transition */
   successMessage.classList.add('hidden');
   resetForm();
@@ -73,9 +71,6 @@ ctaButton.addEventListener('click', showForm);
 
 // ** Back button > close form
 formBackButton.addEventListener('click', showInitialContent);
-
-// ** Success message back button > close message
-successBackButton.addEventListener('click', showInitialContent);
 
 // ** Form SUBMISSION handling
 contactForm.addEventListener('submit', function(event) {
