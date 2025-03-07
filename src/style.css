@@ -45,6 +45,18 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
+  
+  /* background animation  */
+  animation: backgroundScroll 30s linear infinite;
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
 }
 
 /* --- Header for mobile --- */
