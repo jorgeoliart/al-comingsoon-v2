@@ -65,6 +65,10 @@ header {
   display: none !important;
 }
 
+button {
+  font-family: var(--font-family-heading);
+}
+
 /* --- Main container -- */
 .main-content {
   margin: auto;
@@ -290,9 +294,14 @@ header {
 }
 
 .success-message-container .success-back-button {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 400;
+  padding: var(--space-sm) var(--space-sm);
+  color: var(--color-blue);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: var(--space-sm);
+  transition: background-color 0.3s ease;
+  display: inline block;
 
 }
 
