@@ -186,7 +186,19 @@ header {
   background-color: var(--color-dark-purple);
   border-radius: 8px;
   text-align: left;
+
+  /* Initially hidden and transparent */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Added transition */
 }
+
+/* Override hidden class to make it visible and opaque with transition */
+.contact-form.show { /* New class 'show' instead of removing 'hidden' */
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .contact-form h2 {
   color: var(--color-yellow);

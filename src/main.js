@@ -15,9 +15,10 @@ const successBackButton = document.querySelector('.success-back-button');
 // --- FUNCTION to show the form and hide the initial content
 function showForm() {
   console.log("CTA button has been clicked.");
-  heroSection.classList.add('hidden'); // classList just added. Check its functioning
+  heroSection.classList.add('hidden'); 
   ctaSection.classList.add('hidden');
   contactFormSection.classList.remove('hidden');
+  contactFormSection.classList.add('show'); /* Ass 'show' class to trigger the transition */
 
   // Focus on the first input field when the form is shown
   const firstInput = contactFormSection.querySelector('input[type="text"], input[type="email"], textarea');
@@ -36,7 +37,8 @@ function showInitialContent() {
 
   heroSection.classList.remove('hidden');
   ctaSection.classList.remove('hidden');
-  contactFormSection.classList.add('hidden');
+  contactFormSection.classList.remove('show'); /* Remove 'show' class to fade out */
+  contactFormSection.classList.add('hidden'); /* Re-hide it after transition */
   successMessage.classList.add('hidden');
   resetForm();
 }
