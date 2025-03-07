@@ -277,8 +277,11 @@ header {
 }
 
 .success-message-container h3 {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   font-size: 1.5rem;
+  font-family:var(--font-family-heading);
+  color: var(--color-yellow);
+  font-weight: 700;
 }
 
 .success-message-container p {
@@ -287,7 +290,6 @@ header {
 }
 
 .success-message-container .success-back-button {
-  font-size: 1.2rem;
   display: inline-block;
   text-decoration: none;
 
