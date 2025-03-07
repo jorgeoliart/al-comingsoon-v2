@@ -292,6 +292,7 @@ header {
 .success-message-container .success-back-button {
   display: inline-block;
   text-decoration: none;
+  font-weight: 400;
 
 }
 
