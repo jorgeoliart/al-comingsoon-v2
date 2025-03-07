@@ -307,6 +307,11 @@ button {
   margin-bottom: var(--space-md);
 }
 
+.success-message-container a.success-back-button {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /* --- Media queries --- */
 /* -- TABLET IN PORTRATIT */
 @media (min-width: 768px) and (max-width: 1023px) {
