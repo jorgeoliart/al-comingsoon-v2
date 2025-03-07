@@ -18,7 +18,7 @@ function showForm() {
   heroSection.classList.add('hidden'); 
   ctaSection.classList.add('hidden');
   contactFormSection.classList.remove('hidden');
-  contactFormSection.classList.add('show'); /* Ass 'show' class to trigger the transition */
+  contactFormSection.classList.add('show'); /* Add 'show' class to trigger the transition */
 
   // Focus on the first input field when the form is shown
   const firstInput = contactFormSection.querySelector('input[type="text"], input[type="email"], textarea');

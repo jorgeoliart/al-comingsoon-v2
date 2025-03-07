@@ -190,13 +190,15 @@ header {
   /* Initially hidden and transparent */
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Added transition */
+  transform: translateY(-20px); /* Start 20px above its normal position */
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out, transform 1s ease-in-out; /* Transition opacity, visibility, and transform over 1 second */
 }
 
 /* Override hidden class to make it visible and opaque with transition */
 .contact-form.show { /* New class 'show' instead of removing 'hidden' */
   opacity: 1;
   visibility: visible;
+  transform: translateY(0); /* Slide down to its normal position */
 }
 
 
