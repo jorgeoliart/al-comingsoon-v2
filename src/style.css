@@ -265,11 +265,11 @@ header {
   background-color: var(--color-light-blue);
 }
 
-/* Form success message */
+/* --- Form success message --- */
 
 .success-message-container {
   background-color: var(--color-dark-purple);
-  padding: var(--space-lg) var(--space-md);
+  padding: var(--space-xl) var(--space-md);
   text-align: center; 
   margin-top: var(--space-xl);
   width: 90%;
@@ -288,6 +288,8 @@ header {
 
 .success-message-container .success-back-button {
   font-size: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
 
 }
 
