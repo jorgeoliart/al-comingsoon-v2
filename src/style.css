@@ -62,7 +62,8 @@ header {
 
 /* --- Utility classes --- */
 .hidden {
-  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /* --- Main container -- */
