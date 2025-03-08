@@ -73,6 +73,11 @@ body {
   z-index: 1000; /* Ensure it's on top */
 }
 
+#language-switcher h2 {
+  text-align: center;
+  color: var(--color-yellow);
+}
+
 .lang-btn {
   background-color: var(--color-yellow);
   color: var(--color-blue);
