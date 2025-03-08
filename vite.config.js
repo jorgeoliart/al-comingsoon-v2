@@ -10,6 +10,7 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
                 thankyou: resolve(__dirname, 'thankyou.html'),
+                thankyouEs: resolve(__dirname, 'thankyou-es.html'), 
             },
         },
     },
