@@ -3,60 +3,77 @@ console.log("main.js is loaded!!")
 import './style.css'
 
 // Get references to the necessary elements
-const heroSection = document.querySelector('.hero')
+const languageSwitcher = document.getElementById('language-switcher'); /* new variable */
+const mainContentContainer = document.getElementById('main-content-container'); /* new variable */
+const contentEn = document.getElementById('content-en'); /* new variable */
+const contentEs = document.getElementById('content-es'); /* new variable */
+const enButton = document.getElementById('lang-en'); /* new variable */
+const esButton = document.getElementById('lang-es'); /* new variable */
+const heroSection = document.querySelector('.hero');
 const ctaSection = document.querySelector('.cta');
 const ctaButton = document.querySelector('.power-button');
 const contactFormSection = document.querySelector('.contact-form');
-const contactForm = document.getElementById('contactForm')
+const contactForm = document.getElementById('contactForm');
 const formBackButton = document.querySelector('.contact-form .back-button');
 const successMessage = document.querySelector('.success-message-container');
 
-// --- FUNCTION to show the form and hide the initial content
-function showForm() {
-  console.log("CTA button has been clicked.");
-  heroSection.classList.add('hidden'); 
-  ctaSection.classList.add('hidden');
-  contactFormSection.classList.remove('hidden');
-  contactFormSection.classList.add('show'); /* Add 'show' class to trigger the transition */
 
-  // Focus on the first input field when the form is shown
-  const firstInput = contactFormSection.querySelector('input[type="text"], input[type="email"], textarea');
-  if (firstInput) {
-    firstInput.focus();
-  }
+// --- FUNCTION to show English content
+function showEnglish() {
+  languageSwitcher.classList.add('hidden');
+  mainContentContainer.classList.remove('hidden');
+  contentEn.classList.remove('hidden');
+  document.documentElement.lang = "en"; /* Set HTML lang attribute */
+
+  // Show contact form when 'power button' is clicked (English)
+  console.log("cta button in ENG has been clicked");
+  const powerButtonEn = contentEn.querySelector('.power-button');
+  powerButtonEn.addEventListener('click', () => {
+    contentEn.querySelector('.hero').classList.add('hidden');
+    contentEn.querySelector('.cta').classList.add('hidden');
+    contentEn.querySelector('.contact-form').classList.remove('hidden');
+    contentEn.querySelector('.contact-form').classList.add('show');
+  });
+
+  // Handle back button in English form
+  const backButtonEn = contentEn.querySelector('.back-button');
+  backButtonEn.addEventListener('click', () => {
+    resetForm();
+    contentEn.querySelector('.hero').classList.remove('hidden');
+    contentEn.querySelector('.cta').classList.remove('hidden');
+    contentEn.querySelector('.contact-form').classList.add('hidden');
+    contentEn.querySelector('.contact-form').classList.remove('show');
+  });
 }
 
-// --- FUNCTION to hide the form and show the initial content
-function showInitialContent() {
-  console.log("showInitialContent() is running"); // ADD THIS
-  console.log("heroSection:", heroSection);       // ADD THIS
-  console.log("ctaSection:", ctaSection);         // ADD THIS
-  console.log("contactFormSection:", contactFormSection); // ADD THIS
-  console.log("successMessage:", successMessage);    // ADD THIS
+// --- FUNCTION to show Spanish content
+function showSpanish() {
+  languageSwitcher.classList.add('hidden');
+  mainContentContainer.classList.remove('hidden');
+  contentEs.classList.remove('hidden');
+  document.documentElement.lang = "es"; /* Set html lang attribute */
 
-  heroSection.classList.remove('hidden');
-  ctaSection.classList.remove('hidden');
-  contactFormSection.classList.add('hidden'); /* Re-hide it after transition */
-  successMessage.classList.add('hidden');
-  resetForm();
+  // Show contact form when "power-button" is clicked (Spanish)
+  console.log("cta button in SPA has been clicked");
+  const powerButtonEs = contentEs.querySelector('.power-button');
+  powerButtonEs.addEventListener('click', () => {
+    contentEs.querySelector('.hero').classList.add('hidden');
+    contentEs.querySelector('.cta').classList.add('hidden');
+    contentEs.querySelector('.contact-form').classList.remove('hidden');
+    contentEs.querySelector('.contact-form').classList.add('show');
+  });
+
+  // Handle back button in Spanish form
+  const backButtonEs = contentEs.querySelector('.back-button');
+  backButtonEs.addEventListener('click', () => {
+    resetForm();
+    contentEs.querySelector('.hero').classList.remove('hidden');
+    contentEs.querySelector('.cta').classList.remove('hidden');
+    contentEs.querySelector('.contact-form').classList.add('hidden');
+    contentEs.querySelector('.contact-form').classList.remove('show');
+  });
 }
 
-// --- FUNCTION to show success message and hide form
-function showSuccessMessage() {
-  console.log('showSuccessMessage() function is running!')
-
-  contactFormSection.classList.add('hidden');
-  console.log("contactFormSection classList after add('hidden'):", contactFormSection.classList); // **NEW LOG**
-  
-  successMessage.classList.remove('hidden');
-  console.log("successMessage classList after remove('hidden'):", successMessage.classList); // **NEW LOG**
-
-
-
-  // setTimeout(function() {
-  //   resetForm();
-  // }, 2000);
-}
 
 // --- FUNCTION to reset the contact form fields
 function resetForm() {
@@ -73,7 +90,7 @@ ctaButton.addEventListener('click', showForm);
 formBackButton.addEventListener('click', showInitialContent);
 
 // ** Form SUBMISSION handling
-contactForm.addEventListener('submit', function(event) {
+// contactForm.addEventListener('submit', function(event) {
 
-  console.log('Form submission is being handled by Netlify Forms.');
-});
+//  console.log('Form submission is being handled by Netlify Forms.');
+// });

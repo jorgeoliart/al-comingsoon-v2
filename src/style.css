@@ -78,8 +78,6 @@ body {
   color: var(--color-blue);
   padding: var(--space-sm) var(--space-md);
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 1.5rem;
   margin: var(--space-sm);
   cursor: pointer;
