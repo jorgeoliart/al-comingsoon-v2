@@ -94,8 +94,11 @@ body {
 #main-content-container {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
 }
-
 
 /* --- Header for mobile --- */
 header {
@@ -118,6 +121,13 @@ header {
 button {
   font-family: var(--font-family-main);
   font-weight: bold;
+}
+
+/* --- Content for languages --- */
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* --- Main container -- */
