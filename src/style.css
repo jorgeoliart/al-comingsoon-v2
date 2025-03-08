@@ -157,6 +157,10 @@ button {
   margin-top: var(--space-lg);
 }
 
+#content-es .launch-text {
+  font-size: 1.5rem;
+}
+
 .logotype {
   display: flex;
   align-items: center;
