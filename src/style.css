@@ -59,6 +59,42 @@ body {
   }
 }
 
+/* --- Language switcher styles --- */
+#language-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height initially" */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgbg(0, 0, 0, 0.8);
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.lang-btn {
+  background-color: var(--color-yellow);
+  color: var(--color-blue);
+  padding: var(--space-sm) var(--space-md);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: var(--space-sm);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-family-heading);
+}
+
+/* --- Main content container styles --- */
+#main-content-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 /* --- Header for mobile --- */
 header {
   display: flex;
