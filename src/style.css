@@ -260,7 +260,6 @@ button {
   transform: translateY(0); /* Slide down to its normal position */
 }
 
-
 .contact-form h2 {
   color: var(--color-yellow);
   margin-bottom: var(--space-md);
