@@ -62,20 +62,19 @@ body {
 /* --- Language switcher styles --- */
 #language-switcher {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height initially" */
+  height: 80vh; /* Full viewport height initially" */
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: rgbg(0, 0, 0, 0.8);
   z-index: 1000; /* Ensure it's on top */
 }
 
 #language-switcher h2 {
   text-align: center;
-  color: var(--color-yellow);
+  color: var(--color-text-light);
+  font-size: 1.8rem;
 }
 
 .lang-btn {
@@ -83,8 +82,8 @@ body {
   color: var(--color-blue);
   padding: var(--space-sm) var(--space-md);
   text-align: center;
-  font-size: 1.5rem;
-  margin: var(--space-sm);
+  font-size: 1.3rem;
+  margin: var(--space-sm) 0;
   cursor: pointer;
   border: none;
   border-radius: 4px;
