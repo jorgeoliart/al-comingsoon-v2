@@ -82,12 +82,8 @@ function resetForm() {
 }
 
 // *** EVENT LISTENERS
-
-// ** Show form
-ctaButton.addEventListener('click', showForm);
-
-// ** Back button > close form
-formBackButton.addEventListener('click', showInitialContent);
+enButton.addEventListener('click', showEnglish);
+esButton.addEventListener('click', showSpanish);
 
 // ** Form SUBMISSION handling
 // contactForm.addEventListener('submit', function(event) {
