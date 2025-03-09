@@ -162,14 +162,11 @@ button {
 .launch-text {
   font-weight: bold;
   color: var(--color-yellow);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: var(--font-family-heading);
   margin-top: var(--space-lg);
 }
 
-#content-es .launch-text {
-  font-size: 1.5rem;
-}
 
 .logotype {
   display: flex;
