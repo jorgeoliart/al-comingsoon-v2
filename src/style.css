@@ -457,13 +457,19 @@ button {
 
 /* --- MEDIA: LAPTOP OR DESKTOP --- */
 @media (min-width: 1024px) {
+
+  /* Language switcher */
   
   #language-switcher h2 {
     font-size: 2.4rem;
   }
 
   .lang-btn {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  #language-switcher buttons {
+    gap: var(--space-md);
   }
   
   .main-content {
