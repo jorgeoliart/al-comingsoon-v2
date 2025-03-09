@@ -486,6 +486,12 @@ button {
   #language-switcher buttons {
     gap: var(--space-md);
   }
+
+  /* Mountain range background */
+  #mountain-range {
+    background-size: contain;
+    height: 100%;
+  }
   
   .main-content {
     max-width: 1000px;
