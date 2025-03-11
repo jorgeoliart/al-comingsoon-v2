@@ -225,28 +225,30 @@ button {
   font-family: var(--font-family-heading);
 }
 
-.power-button {
-  background-color: black;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  padding: var(--space-xxs);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
+
+.save-seat-button {
+  display: inline-flex;
   align-items: center;
-  transition: background-color 0.3s ease; 
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-yellow);
+  color: var(--color-blue);
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-family-heading);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-.power-button:hover {
-  background-color: blue;
+.save-seat-button:hover {
+  background-color: var(--color-light-blue);
 }
 
-.power-button img {
-  width: 80%;
+.save-seat-button .save-seat-button-icon {
+  width: 24px;
   height: auto;
-  display: block;
 }
 
 /* --- Footer ---*/
