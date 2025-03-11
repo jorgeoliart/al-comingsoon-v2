@@ -237,7 +237,7 @@ button {
   border: none;
   border-radius: 8px;
   font-family: var(--font-family-heading);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth hover transition */
 }
