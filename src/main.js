@@ -3,7 +3,7 @@ console.log("main.js is loaded!!")
 import './style.css'
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Paste here
+  console.log("DOMContentLoaded event fired - DOM is ready!");
 
   // Get references to the necessary elements
   const languageSwitcher = document.getElementById('language-switcher'); /* new variable */
