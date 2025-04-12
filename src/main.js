@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show contact form when "power-button" is clicked (Spanish)
     console.log("cta button in SPA has been clicked");
-    const powerButtonEs = contentEs.querySelector('.power-button');
+    const powerButtonEs = contentEs.querySelector('.save-seat-button');
     powerButtonEs.addEventListener('click', () => {
       contentEs.querySelector('.hero').classList.add('hidden');
       contentEs.querySelector('.cta').classList.add('hidden');
