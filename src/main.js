@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show contact form when 'power button' is clicked (English)
     console.log("cta button in ENG has been clicked");
-    const powerButtonEn = contentEn.querySelector('.save-seat-button-icon');
+    const powerButtonEn = contentEn.querySelector('.save-seat-button');
     powerButtonEn.addEventListener('click', () => {
       contentEn.querySelector('.hero').classList.add('hidden');
       contentEn.querySelector('.cta').classList.add('hidden');
