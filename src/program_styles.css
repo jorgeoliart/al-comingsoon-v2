@@ -74,8 +74,21 @@ h1, h2, h3 {
 }
 
 h1 { font-size: 2.5rem; text-align: center; color: var(--color-yellow); }
-h2 { font-size: 2.2rem; border-bottom: 1px solid var(--color-purple-light); padding-bottom: var(--space-xs); }
-h3 { font-size: 1.5rem; color: var(--color-light-blue); }
+
+h2 { 
+    font-size: 2.2rem; 
+    /* This border style matches the screenshot */
+    border-bottom: 1px solid var(--color-purple-light); 
+    padding-bottom: var(--space-xs); 
+    color: var(--color-text-light); /* Ensure it's white */
+}
+
+h3 { 
+    font-size: 1.5rem; 
+    /* This color matches the bright blue in the screenshot */
+    color: var(--color-light-blue); 
+}
+
 p { margin-bottom: var(--space-sm); font-size: 1.1rem; }
 
 .back-link {
@@ -134,8 +147,12 @@ p { margin-bottom: var(--space-sm); font-size: 1.1rem; }
   background-color: rgba(35, 2, 73, 0.5); /* Semi-transparent --color-dark-purple */
   margin-bottom: var(--space-sm);
   padding: var(--space-md);
+  /* BORDER CHANGE: Ensure it's the vibrant pink */
   border-left: 4px solid var(--color-pink);
   border-radius: 4px;
+  /* FONT SIZE CHANGE: Increased as requested */
+  font-size: 1.15rem; 
+  line-height: 1.7; /* A little extra line height for readability */
 }
 
 .sessions-grid {
