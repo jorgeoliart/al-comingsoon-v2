@@ -143,6 +143,7 @@ p { margin-bottom: var(--space-sm); font-size: 1.1rem; }
     font-size: 1.25rem; /* This makes the font noticeably larger */
     line-height: 1.7;   /* Adds a bit more space between lines for readability */
     max-width: 750px;   /* Sets a maximum width to prevent it looking too wide */
+    text-align: center;
     
     /* These two lines work with max-width to center the entire text block */
     margin-left: auto;
