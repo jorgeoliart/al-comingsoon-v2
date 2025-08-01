@@ -13,6 +13,7 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 thankyou: resolve(__dirname, 'thankyou.html'),
                 thankyouEs: resolve(__dirname, 'thankyou-es.html'), 
+                programCamina: resolve(__dirname, 'program_camila.html'),
             },
         },
     },
