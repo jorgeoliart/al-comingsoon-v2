@@ -110,6 +110,18 @@ p { margin-bottom: var(--space-sm); font-size: 1.1rem; }
   margin-bottom: var(--space-xl);
 }
 
+/* --- Style for the program logo at the top --- */
+.program-logo {
+    display: block; /* Makes the image a block element */
+    margin-left: auto; /* Works with display:block to center it */
+    margin-right: auto; /* Works with display:block to center it */
+    
+    width: 90px; /* You can adjust this value to make the logo bigger or smaller */
+    height: auto; /* Maintains the aspect ratio */
+
+    margin-bottom: var(--space-md); /* Adds space between the logo and the h1 below it */
+}
+
 .name-options {
   display: flex;
   justify-content: center;
